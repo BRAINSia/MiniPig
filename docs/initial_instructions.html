@@ -1,0 +1,896 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="ReText 4.1.2">
+<title>ehdn_bash_markdown</title>
+
+<style>
+    .markdown-body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+</style>
+
+</head>
+<body>
+<article class="markdown-body">
+<h1>Minipig brain processing</h1>
+<p>Here is a collection of bash snippets of scripts I have written and used so far. I've tried to make it as clear as possible with some extra comments, but I guess that the exact code might not even be of much interest to you, you can get the essence by skimming over it.</p>
+<h2>Overview</h2>
+<p>In general we did the following:</p>
+<ol>
+<li>
+<p>We first converted the DICOMs to nifti format using dcm2nifti. To ensure consistend orientation, every image was reoriented with fslreorient2std, although due to the pig's positions, this is not 'real' standard space.</p>
+</li>
+<li>
+<p>We viewed every T13D image with fslview and looked up the anterrior comissure, the coordinates were saved into a textfile.</p>
+</li>
+<li>
+<p>Then we saved cropped copies of the T13D images containing only the brain region, using the collected AC coordinates and fslroi</p>
+</li>
+<li>
+<p>We're lucky that brain extraction works pretty good with our images, using fsl bet. For our template I've used a fractional intensity value of 0.4 and a gradient of 0, also using the multiple iteration option -R. This tends to leave more non-brain tissue in the image, rather than to delete brain tissue.
+We also decided to cut away the olfactory bulb, which has a very nested structure and is imho almost impossible to separate. Luckily bet cuts that bulb away out of the box ;)</p>
+</li>
+<li>
+<p>To create a standard brain I used fsl flirt_average (affine transformations). The result was already pretty good, but I tried to improve it by flirting every image separately on the new coarse standard brain, saving the transformation matrix and then again applying it in a linear transformation with the template as reference. The mean of the resulting transformated brains was supposed to be the fine standard template, but actually I couldn't observe any improvement by doing this, though I didn't test with mathematical means, just compared them by looking at them.
+I've clipped the standard brain intensity at reasonable values (I think 250 - 1000 or so) to remove small outlying parts, and the overexposed pituitary gland.
+<em>(non-linear transformation were not possible on the extracted images because of the left-overs of non-brain tissue and the variation in the extractions. I've tried it with the non-exctracted brains, but the result was pretty poor, I didn't even save it.)</em></p>
+</li>
+<li>
+<p>The step of obtaining an atlas (or few parts of an atlas) maybe was the most unconventional one. There is a very pretty atlas of the domestic pic freely available (<a href="https://www6.rennes.inra.fr/adnc_eng/Research/Research-Highlights/Pig-brain-atlas">https://www6.rennes.inra.fr/adnc_eng/Research/Research-Highlights/Pig-brain-atlas</a>) that I matched on our standard brain with fsl flirt, which actually worked surprisingly well. Then I separated the atlas into the single masks and loaded them into fslview, together with our standard template. I've started to manually draw the functional regions of the basal ganglia on new masks, using the transformed domestic pig masks as guidelines.
+As a physicist I'm not that much of an expert in brain anatomy, but I did the best I could in short time ;) However, I hardly finished the basal ganglia. I'm not sure if the resolution is sufficient to create a satisfactory atlas, that's why I asked the team in Prague, where the model is created, for images of histological slices (I just wrote that email so no reply yet).</p>
+</li>
+</ol>
+<h2>Code snippets</h2>
+<h3>converting and reorienting</h3>
+<pre><code class="sh"># widh SDIR = SourceDirectory and DDIR = DestinationDirectory
+# the -4 option and reorientating is included, since we use the
+# same script for other sequences, e.g. DTI sequences, that have
+# different orientations.
+for i in $FILES; do
+  mkdir $DDIR/tmp
+  echo &quot;processing file: $i&quot;
+  dcm2nii -4 Y -a N -c Y -d N -e N -f Y -g Y -i N -m N -n Y -o $DDIR/tmp -p N -r N -s N -v Y -x N $SDIR/$i/DICOM
+  echo &quot;reorienting $i&quot;
+  fslreorient2std $DDIR/tmp/IM*.nii.gz $DDIR/$i.nii.gz
+  mv $DDIR/tmp/*.bval $DDIR/$i.bval
+  mv $DDIR/tmp/*.bvec $DDIR/$i.bvec
+  echo &quot;cleaning up&quot;
+  rm -r $DDIR/tmp/
+done
+</code></pre>
+
+<h3>cropping around the AC</h3>
+<pre><code class="sh"># file containing the AC coordinates
+CROPDATA=&quot;/var/mri/fractional_anisotropy/txt/anterior_commissure_whitelist_2014-06-13.txt&quot;
+
+# the resulting brain-only image size was chosen so that larger brains would fit too.
+X_CROP=180
+Y_CROP=130
+Z_CROP=190
+
+# reading from CROPDATA file to process the images. Somehow we got a pixelshift
+# between the captured coordinates of the AC in x-direction that we cannot 
+# explain. The quickest fix was to add 23 pixels.
+while read line; do
+  set -- $line
+  if [ $1 == $(basename $FILE .nii.gz) ]; then
+    # adding pixelshift of 23px in x direction
+    X_START=$(echo &quot;($2 - ($X_CROP/2) + 23)&quot; | bc)
+    Y_START=$(echo &quot;($3 - ($Y_CROP/2))&quot; | bc)
+    Z_START=$(echo &quot;($4 - ($Z_CROP/2))&quot; | bc)
+
+    fslroi $SDIR/$FILE $DDIR/c$FILE $X_START $X_CROP $Y_START $Y_CROP $Z_START $Z_CROP 
+  fi
+done &lt; $CROPDATA
+</code></pre>
+
+<h3>extract the brain with bet</h3>
+<pre><code class="sh">FRACINT=0.4
+GRADIENT=0
+
+bet $SDIR/$FILE $DDIR/ex$FILE -f $FRACINT -g $GRADIENT -R
+</code></pre>
+
+<h3>creating the standard brain</h3>
+<pre><code class="sh"># create raw template with flirt_average
+#
+# WHITELIST contains only those brains that did not suffer from eye movement
+# or other artifacts during acquisition
+WHITELIST=&quot;/var/mri/fractional_anisotropy/txt/flirt_average_whitelist_2014-09-01.txt&quot;
+
+FILES=&quot;&quot;
+COUNT=0
+while read line
+do
+  set -- $line
+  FILE=$(ls $SDIR | grep flflexc$line)
+  if [ ! $FILE == &quot;&quot; ]; then
+    FILES=&quot;$FILES $SDIR/$FILE&quot;
+    COUNT=$(($COUNT + 1)) 
+  fi
+done &lt; $WHITELIST
+
+echo $COUNT
+echo $FILES
+flirt_average $COUNT $FILES $SDIR/fine_average_brain.nii.gz -omat $SDIR/fine_average_brain.mat -bins 256 -cost corratio -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12 -interp trilinear
+
+#
+# flirt brain images to template, generating mat files
+#
+
+FILES=$(ls $SDIR | grep ^exc)
+
+for i in $FILES; do
+  echo &quot;processing $i&quot;
+  bash flirtSingle.sh $SDIR/$i
+done
+
+
+#
+# flirt head images with mat files to template
+#
+
+FILES=$(ls $SDIR | grep ^c[0-9].*\.nii.gz)
+MATFILES=$(ls $SDIR | grep ^exc.*\.mat)
+REFERENCE=&quot;/var/mri/fractional_anisotropy/tmp/ehdn_t13d_converted/001_average_brain.nii.gz&quot;
+
+for i in $MATFILES; do
+  # find file matching the start of mat file without &quot;ex&quot;
+  FILE=$(ls $SDIR | grep ^${i:2:8})
+  echo &quot;processing $FILE&quot;
+  flirt -in $SDIR/$FILE -ref $REFERENCE -out $SDIR/fl$FILE -applyxfm -init $SDIR/$i
+done
+
+#
+# create raw head template with flirt_average using already flirted images
+#
+
+FILES=&quot;&quot;
+COUNT=0
+WHITELIST=&quot;/var/mri/fractional_anisotropy/txt/flirt_average_whitelist_2014-09-01.txt&quot;
+
+while read line
+do
+  set -- $line
+  FILE=$(ls $SDIR | grep flc$line)
+  if [ ! $FILE == &quot;&quot; ]; then
+    FILES=&quot;$FILES $SDIR/$FILE&quot;
+    COUNT=$(($COUNT + 1)) 
+  fi
+done &lt; $WHITELIST
+
+echo $COUNT
+echo $FILES
+flirt_average $COUNT $FILES $SDIR/average_head.nii.gz -omat $SDIR/average_head.mat -bins 256 -cost corratio -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12 -interp trilinear
+
+</code></pre>
+
+<h3>reorienting the domestic pig atlas</h3>
+<pre><code class="sh"># The domestic pig atlas of course is oriented &quot;correctly&quot; so the orientation
+# had to be matched to the one we are using.
+ATLAS=$1
+
+fslorient -deleteorient $ATLAS
+
+fslswapdim $ATLAS x -z -y $ATLAS
+
+fslorient -setqformcode 1 $ATLAS
+fslorient -setsformcode 1 $ATLAS
+
+fslswapdim $ATLAS RL PA IS $ATLAS
+</code></pre>
+
+<pre><code class="sh"># splitting the domestic pig atlas into its single parts was done with fslmaths.
+# Unfortunately, the linear transformation brought some artefacts into the atlas,
+# since it's not possible to transform using only integer values.
+for i in $(seq 0 251); do
+  fslmaths $SDIR/$ATLAS -sub $i -thr 0 -uthr 1 $DDIR/&quot;$i&quot;_$ATLAS
+done
+
+</code></pre>
+</article>
+</body>
+</html>

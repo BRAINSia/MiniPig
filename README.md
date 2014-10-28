@@ -62,3 +62,10 @@ Ali: Registration consult
 Hans Johnson:  Administration
 To Do Task List
 
+Github:  https://github.com/BRAINSia/MiniPig
+
+This directory:
+        /docs  Misc documentation and notes
+        /scripts  Bash or other scripts necessary to process the data
+
+
