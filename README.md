@@ -12,6 +12,7 @@ Project Information
 | MiniPig     |  2014-10-28          |  2015-05-31       |
 
 
+| Roles                | Who           |
 |----------------------|---------------|
 | Project Manager:     | Hans Johnson  |
 | Project Sponsor(s):  | Ralf Reilmann |
