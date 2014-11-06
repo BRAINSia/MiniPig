@@ -18,8 +18,6 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
-
 
 #
 # Converts dicom Files to nii.gz

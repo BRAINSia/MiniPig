@@ -19,8 +19,6 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
-
 # check for unset but required args
 if [ -z $2 ]; then
     echo "usage: $0 <FILE> <DDIR> [WHITELIST]"

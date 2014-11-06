@@ -19,19 +19,18 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
 
 # TODO
 # fsl commands have to be made available for the shell
 # . source_fsl
 
-SDIR=$1
-ODIR=$2
-
 if [ -z $2]; then
     echo "usage: $0 <InputDir> <OutputDir> [Whitelist]"
     exit 0
 fi
+
+SDIR=$1
+ODIR=$2
 
 BRAINS=""
 COUNT=0

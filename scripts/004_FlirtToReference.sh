@@ -18,8 +18,7 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
-
+# TODO
 . source_fsl
 
 if [ -z $2 ]; then

@@ -20,8 +20,6 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
-
 if [ -z $1]; then
     echo "usage: $0 <AtlasFile>"
     exit 0
