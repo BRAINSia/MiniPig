@@ -1,1 +1,48 @@
-convertSingle.sh
+#!/bin/bash - 
+#===============================================================================
+#
+#          FILE: 001_ConvertDicomsToNifti.sh
+# 
+#         USAGE: ./001_ConvertDicomsToNifti.sh <SDIR> <DDIR>
+# 
+#   DESCRIPTION: The source directory (SDIR) must contain a DICOM directory
+#                that is converted into .nii.gz format
+# 
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: Robin Schubert (RS), robin.schubert@ghi-muenster.de
+#  ORGANIZATION: GHI
+#       CREATED: 08/01/2014 13:43
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+
+
+#
+# Converts dicom Files to nii.gz
+#
+# @Params: Source Directory, Destination Directory
+#
+SDIR=$1
+DDIR=$2
+FILENAME=$(basename $SDIR)
+
+# creating destintion directory if not existing
+mkdir $DDIR
+mkdir $DDIR/tmp
+
+# converting file
+dcm2nii -4 Y -a N -c Y -d N -e N -f Y -g Y -i N -m N -n Y -o $DDIR/tmp -p N -r N -s N -v Y -x N $SDIR/DICOM
+# reorienting file
+fslreorient2std $DDIR/tmp/IM*.nii.gz $DDIR/"$FILENAME".nii.gz
+mv $DDIR/tmp/*.bval $DDIR/"$FILENAME".bval
+mv $DDIR/tmp/*.bvec $DDIR/"$FILENAME".bvec
+
+# cleaning up
+rm -r $DDIR/tmp/
+
+# return resulting filename for usage in pipe
+echo $DDIR/"$FILENAME".nii.gz

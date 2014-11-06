@@ -1,11 +1,13 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: pipeRawTemplate.sh
+#          FILE: 005_CreateStandardBrain.sh
 # 
-#         USAGE: ./pipeRawTemplate.sh 
+#         USAGE: ./005_CreateStandardBrain.sh <SourceDir> <OutputDir> [Whitelist]
 # 
-#   DESCRIPTION: 
+#   DESCRIPTION: Pipe to create a standard brain in four steps: 
+#                convert raw data, brop images, extract brains, flirt
+#                brains. 
 # 
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
@@ -20,7 +22,8 @@
 set -o nounset                              # Treat unset variables as an error
 
 # TODO
-. source_fsl
+# fsl commands have to be made available for the shell
+# . source_fsl
 
 SDIR=$1
 ODIR=$2
@@ -35,10 +38,13 @@ COUNT=0
 
 for i in $(ls $SDIR)
 do
+    # TODO here we have to get path to rawdata with new naming
+    # convention
+    FILE=$(bash 001_ConvertDicomsToNifti.sh $SDIR $ODIR)
     # cropping converted raw
     FILE=$(bash 002_CropToBrainRegion.sh $SDIR/$i $ODIR)
     # extracting brain, collecting Filenames
-    BRAINS="$BRAINS $(bash 003_ExtractBrain.sh $FILE $ODIR)"
+    BRAINS=$BRAINS $(bash 003_ExtractBrain.sh $FILE $ODIR)
     COUNT=$(($COUNT + 1))
 done
 

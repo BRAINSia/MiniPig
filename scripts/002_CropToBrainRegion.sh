@@ -1,9 +1,9 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: 002_cropToBrainRegion.sh
+#          FILE: 002_CropToBrainRegion.sh
 # 
-#         USAGE: ./cropSingle.sh <FILE> <DDIR>
+#         USAGE: ./002_CropToBrainRegion.sh <FILE> <DDIR>
 # 
 #   DESCRIPTION: crops given FILE with fslroi, using AC coordinates specified
 #                in $CROPDATA file. The width of x, y and z are set fixed from
@@ -45,8 +45,8 @@ X_CROP=180
 Y_CROP=130
 Z_CROP=190
 
-#echo "cropping $SDIR/$FILE to $DDIR/c$FILE, using $CROPDATA"
-
+# reading from AC list with $1 = filename and $2-$4 = x, y, z
+# TODO if consisten renaming is introduced, list has to be updated
 while read line; do
   set -- $line
   if [ $1 == $(basename $FILE .nii.gz) ]; then
@@ -55,7 +55,6 @@ while read line; do
     Y_START=$(echo "($3 - ($Y_CROP/2))" | bc)
     Z_START=$(echo "($4 - ($Z_CROP/2))" | bc)
 
-#    echo "found match: $2 $3 $4, using $X_START $X_CROP $Y_START $Y_CROP $Z_START $Z_CROP"
     fslroi $SDIR/$FILE $DDIR/c$FILE $X_START $X_CROP $Y_START $Y_CROP $Z_START $Z_CROP 
   fi
 done < $CROPDATA
