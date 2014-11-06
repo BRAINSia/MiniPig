@@ -26,6 +26,12 @@ set -o nounset                              # Treat unset variables as an error
 #
 # @Params: Source Directory, Destination Directory
 #
+
+if [ -z $2 ]; then
+    echo 'usage: $0 <SDIR> <DDIR>'
+    exit 0
+fi
+
 SDIR=$1
 DDIR=$2
 FILENAME=$(basename $SDIR)
