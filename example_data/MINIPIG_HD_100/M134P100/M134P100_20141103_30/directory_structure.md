@@ -35,10 +35,12 @@ anonymize the data
 > this ID may not be re-used in any other project or for any other
 > session.
 
-The session ID format was chosen to be *${SUBJECT}_${DATE}_${TESLA}* as
+The session ID format was chosen to be *${SUBJECT}\_${DATE}\_${TESLA}* as
 suggested, (M${ID1}P${ID2}_${DATE}_30). We'll never use something else than
 a 3 Tesla scanner, though.
 
 SUBJECT=M${ID1}P${ID2} where ID1 is <<????>> and ID2 is <<?????>>>.
+
 DATE=YYYYMMDD where YYYY, MM, DD represents the Year/Month/Day of the scan sessions respectively.
+
 30=indicates that these are 3T scanner sequences.
