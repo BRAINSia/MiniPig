@@ -1,11 +1,13 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: splitGoettingenAtlas.sh
+#          FILE: SplitGoettingenAtlas.sh
 # 
-#         USAGE: ./splitGoettingenAtlas.sh 
+#         USAGE: ./SplitDomesticPigAtlas.sh 
 # 
-#   DESCRIPTION: 
+#   DESCRIPTION: Creates a binary mask for every region contained in the
+#                atlas. Masks are used as template to create the complement
+#                based on the MiniPig atlas.
 # 
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
@@ -17,9 +19,7 @@
 #      REVISION:  ---
 #===============================================================================
 
-set -o nounset                              # Treat unset variables as an error
-
-. source_fsl
+# . source_fsl
 
 ATLAS=$(basename $1)
 SDIR=$(dirname $1)
