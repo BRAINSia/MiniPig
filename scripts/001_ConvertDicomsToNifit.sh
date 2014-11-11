@@ -32,16 +32,16 @@ fi
 
 SDIR=$1
 DDIR=$2
-FILENAME=$(basename $SDIR)
 
 # creating destintion directory if not existing
 mkdir $DDIR
 mkdir $DDIR/tmp
 
 # converting file
-dcm2nii -4 Y -a N -c Y -d N -e N -f Y -g Y -i N -m N -n Y -o $DDIR/tmp -p N -r N -s N -v Y -x N $SDIR/DICOM
+dcm2nii -4 Y -a N -c Y -d Y -e N -f N -g Y -i Y -m N -n Y -o $DDIR/tmp -p Y -r N -s N -v Y -x N $SDIR/DICOM
 # reorienting file
-fslreorient2std $DDIR/tmp/IM*.nii.gz $DDIR/"$FILENAME".nii.gz
+FILENAME=$(basename $(ls $DDIR/tmp/*.nii.gz) ".nii.gz" )
+fslreorient2std $DDIR/tmp/*.nii.gz $DDIR/"$FILENAME".nii.gz
 mv $DDIR/tmp/*.bval $DDIR/"$FILENAME".bval
 mv $DDIR/tmp/*.bvec $DDIR/"$FILENAME".bvec
 
