@@ -1,4 +1,4 @@
-# Explanaition of the chosen file structure
+# Explanation of the chosen file structure
 
 As suggested in the Directory Organization For MINIPIG Collaboration
 document, I've now set up a file structure for the minipig project
