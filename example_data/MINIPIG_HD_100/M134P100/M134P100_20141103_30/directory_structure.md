@@ -39,7 +39,11 @@ The session ID format was chosen to be *${SUBJECT}\_${DATE}\_${TESLA}* as
 suggested, (M${ID1}P${ID2}_${DATE}_30). We'll never use something else than
 a 3 Tesla scanner, though.
 
-SUBJECT=M${ID1}P${ID2} where ID1 is <<????>> and ID2 is <<?????>>>.
+SUBJECT=M${ID1}P${ID2} where 
+
+ID1 is the unique earmark given to each pig and 
+
+ID2 is the unique number of the project that the pig was primarily assigned to.
 
 DATE=YYYYMMDD where YYYY, MM, DD represents the Year/Month/Day of the scan sessions respectively.
 
