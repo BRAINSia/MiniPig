@@ -10,17 +10,17 @@ transform_matrix = np.matrix('1 0 0 0; 0 0 1 0; 0 -1 0 0; 0 0 0 1')
 # transformation in separate method
 def transform_nifti(path, transformation):
     import nibabel
-    import numpy as np
 
     # load nifti
     image = nibabel.load(path)
     # get direction matrix
-    affine = image.get_affine()
-    # multiply with transformation matrix
-    affine = affine.dot(transformation)
-    # set result as qform / sform
-    image.set_qform(affine)
-    image.set_sform(affine)
+    sform = image.get_sform()
+    # transform sform
+    sform = sform.dot(transform_matrix)
+    # set new sform
+    image.set_sform(sform)
+    # unset qform
+    image.set_qform(None)
     # save nifti, overwrites original!
     nibabel.save(image, path)
 
