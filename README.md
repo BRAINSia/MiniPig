@@ -66,7 +66,8 @@ To Do Task List
 Github:  https://github.com/BRAINSia/MiniPig
 
 This directory:
-        /docs  Misc documentation and notes
+        /docs     Misc documentation and notes
         /scripts  Bash or other scripts necessary to process the data
+        /data     The shared data repository
 
 
