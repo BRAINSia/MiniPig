@@ -41,7 +41,7 @@ mkdir $DDIR/tmp
 dcm2nii -4 Y -a N -c Y -d Y -e N -f N -g Y -i Y -m N -n Y -o $DDIR/tmp -p Y -r N -s N -v Y -x N $SDIR/DICOM
 # reorienting file
 FILENAME=$(basename $(ls $DDIR/tmp/*.nii.gz) ".nii.gz" )
-fslreorient2std $DDIR/tmp/*.nii.gz $DDIR/"$FILENAME".nii.gz
+mv $DDIR/tmp/*.nii.gz $DDIR/"$FILENAME".nii.gz
 mv $DDIR/tmp/*.bval $DDIR/"$FILENAME".bval
 mv $DDIR/tmp/*.bvec $DDIR/"$FILENAME".bvec
 
